@@ -1,5 +1,6 @@
 body {
 	 font-family: "Century Gothic", 'Lato', sans-serif;
+	 overflow-x: hidden;
 }
  a {
 	 text-decoration: none;
@@ -146,7 +147,7 @@ body {
 }
 .split {
     width: 100%;
-    top: 160px;
+    top: 165px;
     position: fixed;
 }
 .content {
@@ -154,17 +155,20 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 }
+.spacertop {
+    margin-top: 5%;
+   }
 .dem_split, .repub_split {
     width: 50%;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .lefttopper, .righttopper {
     width: 100%;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .repub_split {
     float: right;
@@ -172,10 +176,10 @@ body {
 .dem_split {
     float: left;
 }
-.dem_split, .lefttopper {
+.dem_split, .lefttopper, .biden_split {
     background-color: skyblue;
 }
-.repub_split, .righttopper {
+.repub_split, .righttopper, .trump_split {
     background-color: tomato;
 }
 .holdmeflex {
@@ -187,12 +191,10 @@ body {
   }
 .left {
   width: 50%;
-  background-color: #fff;
   text-align: center;
 }
 .right {
   flex: 1;
-  background-color: #fff;
   text-align: center;
 }
 @media (max-width: 2000px) {
@@ -219,12 +221,58 @@ body {
     display: none;
   }
 }
+h6 {
+    font-size: 1em;
+}
 h5 {
 	position: sticky;
 	top: 70px;
 	width: 100%;
-	font-size: 30px;
+	font-size: 2em;
 	background: white;
     text-align: center;
     padding: 30px 0;
+	letter-spacing:0em;
+      -webkit-text-fill-color: rgba(0, 0, 0, 1);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-shadow:
+    2px -1px rgba(255, 51, 0, 0.09),
+    -1px 2px rgba(51, 153, 255, 0.09);
+}
+.vr {
+    height: 100%;
+    top: 0;
+    left: 49.95%;
+    position: fixed;
+    width: 1px;
+    background: #ededed;
+    z-index: -1;
+}
+.portrait {
+ z-index: 15;
+ width: 100%;
+ background: url("canvas.png") repeat;
+ background-size: contain;
+ margin-top: -100px;
+}
+.portrait img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-position: 0px 0px;
+}
+.left_lda {
+  width: 85%;
+  margin-left: 15%;
+}
+.biden_split, .trump_split  {
+    position: sticky;
+    text-align: center;
+    top: 165px;
+	width: 100%;
+	z-index: 99;
+	padding-top: 27px;
+    padding-bottom: 27px;
 }
