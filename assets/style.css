@@ -274,6 +274,7 @@ h5 {
 .left_lda {
   width: 85%;
   margin-left: 10%;
+  background: #fff;
 }
 .biden_split, .trump_split  {
     position: sticky;
