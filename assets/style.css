@@ -193,6 +193,9 @@ body {
 .spacer {
   padding-top: 14%;
   }
+  .negspacer {
+  padding-top: -10%;
+  }
 .left {
   width: 50%;
   text-align: center;
@@ -323,8 +326,14 @@ h5 {
     left: -50%;
 }
 iframe {
-    width: 650px;
-    height: 650px;
     overflow: hidden;
     border: none;
+}
+.plots {
+    width: 650px;
+    height: 650px;
+}
+.barplots {
+    width: 650px;
+    height: 500px;
 }
