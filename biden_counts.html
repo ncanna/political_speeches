@@ -52,7 +52,7 @@ var yAxis = svg.append("g")
   .attr("class", "myYaxis")
 
 function update(selectedVar) {
-  d3.csv("https://raw.githubusercontent.com/ncanna/political-speeches/master/data/count_data.csv", function(data) {
+  d3.csv("https://raw.githubusercontent.com/ncanna/political-speeches/master/data/biden_simple_count_data.csv", function(data) {
 
     x.domain(data.map(function(d) { return d.group; }))
     xAxis.transition().duration(500).call(d3.axisBottom(x))
