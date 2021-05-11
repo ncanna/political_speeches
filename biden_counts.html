@@ -17,7 +17,7 @@
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
-    width = 460 - margin.left - margin.right,
+    width = 1000 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -47,7 +47,7 @@ var yAxis = svg.append("g")
 function update(selectedVar) {
 
   // Parse the Data
-  d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/barplot_change_data.csv", function(data) {
+  d3.csv("https://raw.githubusercontent.com/ncanna/political-speeches/master/data/count_data.csv", function(data) {
 
     // X axis
     x.domain(data.map(function(d) { return d.group; }))
