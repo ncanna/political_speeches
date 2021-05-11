@@ -339,21 +339,21 @@ iframe {
     height: 500px;
 }
 /* unvisited link */
-a:link {
+.copyright a:link {
   color: blue;
 }
 
 /* visited link */
-a:visited {
+.copyright a:visited {
   color: blue;
 }
 
 /* mouse over link */
-a:hover {
+.copyright a:hover {
   color: red;
 }
 
 /* selected link */
-a:active {
+.copyright a:active {
   color: red;
 }
