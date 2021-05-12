@@ -52,6 +52,24 @@ var y = d3.scaleLinear()
 var yAxis = svg.append("g")
   .attr("class", "myYaxis")
 
+svg.append("text")
+    .attr("class", "x label")
+    .attr("text-anchor", "end")
+    .attr("x", width - 230)
+     .style('font-family', '"Open Sans", sans-serif')
+    .attr("y", height + 50)
+    .text("Keyword");
+
+svg.append("text")
+    .attr("class", "y label")
+    .attr("text-anchor", "end")
+    .attr("y", -50)
+    .attr("x", -80)
+    .attr("dy", ".75em")
+    .style('font-family', '"Open Sans", sans-serif')
+    .attr("transform", "rotate(-90)")
+    .text("Average Word Count");
+
 function update(selectedVar) {
 
   d3.csv("https://raw.githubusercontent.com/ncanna/political-speeches/master/data/trump_simple_count_data.csv", function(data) {
