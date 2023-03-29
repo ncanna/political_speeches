@@ -7,3 +7,4 @@ An analysis and visualization of political speeches of the 2020 US Presidential 
 The site and plots are intended to be interactive! This site has an active [GitHub Pages deployment](https://ncanna.github.io/political-speeches/) for this repo to explore the visualizations. 
 
 
+
